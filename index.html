@@ -9,26 +9,27 @@
     <body>
         <div class="calculator">
             <input type="text" id="display" disabled>
-            <div class="box-buttons"> <!-- Buttons -->
-                <button>C</button>
-                <button>DEL</button>
-                <button>/</button>
-                <button>*</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>-</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>+</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="btn-zero">0</button>
-                <button>.</button>
-                <button class="btn-result">=</button>
+            <div class="box-buttons">
+                <button onclick="clean()">C</button>
+                <button onclick="del()">DEL</button>
+                <button onclick="insertDisplay('/')">/</button>
+                <button onclick="insertDisplay('*')">*</button>
+                <button onclick="insertDisplay('7')">7</button>
+                <button onclick="insertDisplay('8')">8</button>
+                <button onclick="insertDisplay('9')">9</button>
+                <button onclick="insertDisplay('-')">-</button>
+                <button onclick="insertDisplay('4')">4</button>
+                <button onclick="insertDisplay('5')">5</button>
+                <button onclick="insertDisplay('6')">6</button>
+                <button onclick="insertDisplay('+')">+</button>
+                <button onclick="insertDisplay('1')">1</button>
+                <button onclick="insertDisplay('2')">2</button>
+                <button onclick="insertDisplay('3')">3</button>
+                <button class="btn-zero" onclick="insertDisplay('0')">0</button>
+                <button onclick="insertDisplay('.')">.</button>
+                <button class="btn-result" onclick="result('=')">=</button>
             </div>
         </div>
+        <script src="script.js"></script>
         </body>
 </html>
